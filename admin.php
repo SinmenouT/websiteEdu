@@ -6,7 +6,6 @@ define('DB_NAME', 'concours');
 define('DB_USER', 'root');
 define('DB_PASS', '');
 
-// Connexion à la base de données
 try {
     $pdo = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASS);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -30,7 +29,7 @@ $total_ingenieur = $stmt_count_ingenieur->fetch(PDO::FETCH_ASSOC)['total'];
 $stmt = $pdo->query("SELECT * FROM candidats ORDER BY id_candidat DESC");
     // Exécutez la requête
 
-    //   $pdo = null;
+
 
 ?>
 <!DOCTYPE html>
