@@ -2,7 +2,7 @@
 <?php
 // Informations de connexion à la base de données
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'concours');
+define('DB_NAME', 'con');
 define('DB_USER', 'root');
 define('DB_PASS', '');
 
